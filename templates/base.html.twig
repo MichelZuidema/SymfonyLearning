@@ -8,8 +8,10 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
-        {{ include('articles/inc/navbar.html.twig') }}
-        {% block body %}{% endblock %}
+        {{ include('/inc/navbar.html.twig') }}
+        <div class="container">
+            {% block body %}{% endblock %}
+        </div>
         {% block javascripts %}{% endblock %}
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
